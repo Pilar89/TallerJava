@@ -6,7 +6,7 @@ public class Menu {
 
   public void imprimirMenu() {
     Scanner scanner = new Scanner(System.in);
-    int opcion = 0;
+    Integer opcion = 0;
 
 
     while (opcion != 8) {

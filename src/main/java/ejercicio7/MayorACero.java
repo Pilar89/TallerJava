@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MayorACero {
   public void EsMayorACero() {
     Scanner sc = new Scanner(System.in);
-    int numero;
+    Integer numero;
 
     do {
       System.out.println("Ingrese un numero: ");

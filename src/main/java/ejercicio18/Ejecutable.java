@@ -6,10 +6,10 @@ public class Ejecutable {
 
     if ((Videojuego) a[0] == null) return;
     int contador = 0;
-    for (int i = 0; i < a.length; i++) {
-      if (a[i].isEntregado()) {
+    for (int index = 0; index < a.length; index++) {
+      if (a[index].isEntregado()) {
         contador += 1;
-        a[i].devolver();
+        a[index].devolver();
       }
     }
     System.out.println("En total hay " + contador + " videojuegos entregados");
@@ -20,10 +20,10 @@ public class Ejecutable {
 
     if ((Serie) a[0] == null) return;
     int contador = 0;
-    for (int i = 0; i < a.length; i++) {
-      if (a[i].isEntregado()) {
+    for (int index = 0; index < a.length; index++) {
+      if (a[index].isEntregado()) {
         contador += 1;
-        a[i].devolver();
+        a[index].devolver();
 
       }
     }
@@ -34,9 +34,9 @@ public class Ejecutable {
   public void calcularVideojuegoMasHorasEstimasdas(Videojuego[] a) {
     if ((Videojuego) a[0] == null) return;
     int indice = 0;
-    for (int i = 1; i < a.length; i++) {
-      if (a[i].getHorasEstimadas() > a[indice].getHorasEstimadas()) {
-        indice = i;
+    for (int index = 1; index < a.length; index++) {
+      if (a[index].getHorasEstimadas() > a[indice].getHorasEstimadas()) {
+        indice = index;
       }
     }
     System.out.println(a[indice].toString());
@@ -47,9 +47,9 @@ public class Ejecutable {
   public void calcularSerioConMasTemporadas(Serie[] a) {
     if ((Serie) a[0] == null) return;
     int indice = 0;
-    for (int i = 1; i < a.length; i++) {
-      if (a[i].getNumeroDeTemporadas() > a[i].getNumeroDeTemporadas()) {
-        indice = i;
+    for (int index = 1; index < a.length; index++) {
+      if (a[index].getNumeroDeTemporadas() > a[index].getNumeroDeTemporadas()) {
+        indice = index;
 
       }
 

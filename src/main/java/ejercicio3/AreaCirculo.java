@@ -3,8 +3,8 @@ package ejercicio3;
 import java.util.Scanner;
 
 public class AreaCirculo {
-  public void calcularAreaCirculo(double radio) {
-    double area = Math.PI * radio * radio;
+  public void calcularAreaCirculo(Double radio) {
+    Double area = Math.PI * radio * radio;
     System.out.println("Area circulo: " + area);
   }
 
@@ -16,7 +16,7 @@ public class AreaCirculo {
     String valorEntrada = sc.next();
 
     try {
-      double radio = Double.parseDouble(valorEntrada);
+      Double radio = Double.parseDouble(valorEntrada);
       area.calcularAreaCirculo(radio);
     } catch (Exception e) {
       System.out.println("El valor ingresado no es valido");

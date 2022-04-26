@@ -7,15 +7,14 @@ public class Ejecutable {
     double precioTotalLavadoras = 0;
     double precioAcumulado = 0;
 
-    for (int i = 0; i < electrodomesticosArray.length; i++) {
+    for (int index = 0; index < electrodomesticosArray.length; index++) {
 
-      System.out.println("Precio fina electrodomestico " + (i + 1) + ": €" + electrodomesticosArray[i].precioFinal());
-
-      precioAcumulado += electrodomesticosArray[i].precioFinal();
-      if (electrodomesticosArray[i] instanceof Television) {
-        precioTotalTV += electrodomesticosArray[i].precioFinal();
+      System.out.println("Precio fina electrodomestico " + (index + 1) + ": €" + electrodomesticosArray[index].precioFinal());
+      precioAcumulado += electrodomesticosArray[index].precioFinal();
+      if (electrodomesticosArray[index] instanceof Television) {
+        precioTotalTV += electrodomesticosArray[index].precioFinal();
       } else {
-        precioTotalLavadoras += electrodomesticosArray[i].precioFinal();
+        precioTotalLavadoras += electrodomesticosArray[index].precioFinal();
       }
 
     }

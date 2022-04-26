@@ -2,13 +2,15 @@ package ejercicio1;
 
 public class VariableMayor {
 
-  public void encontrarMayor(int var1, int var2) {
-    if (var1 == var2) {
+  public void encontrarMayor(Integer variable1, Integer variable2) {
+
+    if (variable1 == variable2) {
       System.out.println("Los dos valores son iguales");
       return;
     }
-    int numeroMayor = Math.max(var1, var2);
-    int numeroMenor = Math.min(var1, var2);
+    Integer numeroMayor = Math.max(variable1, variable2);
+    Integer numeroMenor = Math.min(variable1, variable2);
+
     System.out.println(numeroMayor + " es mayor que " + numeroMenor);
 
   }

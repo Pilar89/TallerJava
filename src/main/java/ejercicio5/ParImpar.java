@@ -4,7 +4,7 @@ public class ParImpar {
 
   public void mostrarParImpar() {
 
-    int contador = 1;
+    Integer contador = 1;
     while (contador <= 100) {
       if (contador % 2 == 0) System.out.println("Par: " + contador);
       else {

@@ -11,11 +11,13 @@ public class DiaLaboral {
       case "miercoles":
       case "jueves":
       case "viernes":
+
         System.out.println("Es dia laboral.");
         break;
 
       case "sabado":
       case "domingo":
+
         System.out.println("No es día laboral.");
         break;
 

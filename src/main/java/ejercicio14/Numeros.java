@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Numeros {
 
-  public void imprimirNumeros(int numero) {
+  public void imprimirNumeros(Integer numero) {
 
     if (numero > 1000) {
       System.out.println("Debes ingresar un numero menor o igual a 1000");
